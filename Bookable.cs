@@ -29,20 +29,20 @@ namespace OOP_project1_group2
         }
         public bool isAvailableAt(DateTime time)
         {
-			    /*
-			    NYI: Compare to the object's daily schedule
-			    */
-			    foreach(var booking in activeBookings)
-			    {
-				  //Check whether the given time is already occupied
-				  //by an active booking
-				    if(booking.isInBookingInterval(time))
-				    {
-					    return false;
-				    }
-          }
-			  //No scheduling conflicts found
-			  return true;
+			/*
+			NYI: Compare to the object's daily schedule
+			*/
+			foreach(var booking in activeBookings)
+			{
+			//Check whether the given time is already occupied
+			//by an active booking
+				if(booking.isInBookingInterval(time))
+				{
+					return false;
+				}
+			}
+			//No scheduling conflicts found
+			return true;
         }
     }
 }
