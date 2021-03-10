@@ -14,7 +14,8 @@
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>223</x><y>240</y><w>210</w><h>120</h></coordinates><panel_attributes>Employee
 --
 -id: int
-
+--
++getEmployeeInfo(): string
 
 
 
