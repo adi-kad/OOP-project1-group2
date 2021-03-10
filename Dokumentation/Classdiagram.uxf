@@ -1,4 +1,4 @@
-<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>453</x><y>70</y><w>210</w><h>120</h></coordinates><panel_attributes>Person
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>373</x><y>91</y><w>210</w><h>120</h></coordinates><panel_attributes>Person
 --
 -name: string
 -contact number: string
@@ -10,7 +10,8 @@
 
 
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>303</x><y>310</y><w>210</w><h>120</h></coordinates><panel_attributes>Employee
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>223</x><y>301</y><w>210</w><h>120</h></coordinates><panel_attributes>Employee
 --
 -id: int
 
@@ -18,25 +19,54 @@
 
 
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>403</x><y>260</y><w>340</w><h>70</h></coordinates><panel_attributes>lt=-
-m1=  1..*</panel_attributes><additional_attributes>10;50;10;10;320;10</additional_attributes></element><element><id>Relation</id><coordinates><x>553</x><y>190</y><w>40</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>323</x><y>251</y><w>340</w><h>70</h></coordinates><panel_attributes>lt=-
+m1=  1..*</panel_attributes><additional_attributes>10;50;10;10;320;10</additional_attributes></element><element><id>Relation</id><coordinates><x>473</x><y>201</y><w>40</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
 m2=  2
-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>613</x><y>310</y><w>210</w><h>160</h></coordinates><panel_attributes>Visitor
+</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>533</x><y>301</y><w>210</w><h>130</h></coordinates><panel_attributes>Visitor
 --
--activeBookings: int
+-activeBookings: list
 -trainingSchedule: bool
--numberOfBookings: int
 -
-+getActiveBookings(): int
-+getNumberOfBookings(): int
++getActiveBookings(): list
 +hasTrainingSchedule(): bool
 +setBooking(): bool
 +cancelBooking(): void
 
 
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>713</x><y>260</y><w>50</w><h>70</h></coordinates><panel_attributes>lt=-
-m2=  1..*</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>943</x><y>70</y><w>210</w><h>120</h></coordinates><panel_attributes>Booking
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>633</x><y>251</y><w>50</w><h>70</h></coordinates><panel_attributes>lt=-
+m2=  1..*</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>561</y><w>210</w><h>120</h></coordinates><panel_attributes>Receptionist
+
+
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>411</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>501</y><w>500</w><h>80</h></coordinates><panel_attributes>lt=-
+m1=  1..*</panel_attributes><additional_attributes>10;60;10;10;480;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>230</x><y>561</y><w>210</w><h>120</h></coordinates><panel_attributes>Administrator
+--
+
+
+
+--
++setEmployeeAccess()
++addActivity()
+
+
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>501</y><w>50</w><h>80</h></coordinates><panel_attributes>lt=-
+m2=  1..*</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>561</y><w>210</w><h>120</h></coordinates><panel_attributes>Trainer
+
+
+
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>501</y><w>50</w><h>80</h></coordinates><panel_attributes>lt=-
+m1=  1..*</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>611</y><w>50</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;30;10</additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>611</y><w>50</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;30;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>930</x><y>61</y><w>210</w><h>120</h></coordinates><panel_attributes>Booking
+--
+-booked: bookable
 --
 
 
@@ -47,28 +77,81 @@ m2=  1..*</panel_attributes><additional_attributes>10;10;10;50</additional_attri
 
 
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>653</x><y>100</y><w>310</w><h>40</h></coordinates><panel_attributes>lt=-
-</panel_attributes><additional_attributes>10;20;290;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>570</y><w>210</w><h>120</h></coordinates><panel_attributes>Receptionist
-
-
-
-
-
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>430</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>510</y><w>500</w><h>80</h></coordinates><panel_attributes>lt=-
-m1=  1..*</panel_attributes><additional_attributes>10;60;10;10;480;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>310</x><y>570</y><w>210</w><h>120</h></coordinates><panel_attributes>Administrator
-
-
-
-
-
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>510</y><w>50</w><h>80</h></coordinates><panel_attributes>lt=-
-m2=  1..*</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>570</y><w>210</w><h>120</h></coordinates><panel_attributes>Trainer
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>930</x><y>211</y><w>210</w><h>170</h></coordinates><panel_attributes>Facility
+--
+-id: int
+-bookable: list&lt;Bookable&gt;
+-Employees: list&lt;Employee&gt;
+-Visitors: list&lt;Visitor&gt;
+--
++addBookableRoom(): void
++removeBookableRoom(roomID): void
++getBookableRooms(): list
 
 
 
 
 
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>510</y><w>50</w><h>80</h></coordinates><panel_attributes>lt=-
-m1=  1..*</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>190</y><w>150</w><h>210</h></coordinates><panel_attributes>lt=&lt;&lt;.
-m2=  *</panel_attributes><additional_attributes>130;10;10;190</additional_attributes></element></diagram>
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1020</x><y>171</y><w>50</w><h>60</h></coordinates><panel_attributes>lt=.
+m1=0..*
+</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>UMLClass</id><coordinates><x>830</x><y>591</y><w>180</w><h>120</h></coordinates><panel_attributes>BookableRoom
+--
+
+
+
+
+
+
+
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1050</x><y>591</y><w>170</w><h>120</h></coordinates><panel_attributes>TrainingTool
+--
+-broken: bool
+
+
+
+
+
+
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1170</x><y>231</y><w>210</w><h>130</h></coordinates><panel_attributes>CommonRoom
+--
+-trainingTools: list
+--
++addTrainingTool(): void
++removeTrainingTool(toolID): void
++getTrainingtools(): list
++setTrainingToolStatus(toolID): void
+
+
+
+
+
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1130</x><y>291</y><w>60</w><h>40</h></coordinates><panel_attributes>lt=.
+m1=1</panel_attributes><additional_attributes>10;10;40;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>930</x><y>410</y><w>210</w><h>120</h></coordinates><panel_attributes>Bookable
+--
+-id: int
+-hours: Dictionary&lt;string,bool&gt;
+-type: string
+
+
+
+
+
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1020</x><y>520</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>920</x><y>550</y><w>240</w><h>60</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;40;10;10;220;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1130</x><y>550</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>1020</x><y>370</y><w>50</w><h>60</h></coordinates><panel_attributes>lt=.
+m1=0..*
+</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element></diagram>
