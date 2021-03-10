@@ -33,7 +33,47 @@ namespace OOP_project1_group2
             // Console.WriteLine(v1.getActiveBookings());
             // Console.WriteLine(v1.hasTrainingSchedule());
             
-            Console.ReadKey();            
+            // CommonRoom commonRoom = new CommonRoom();
+            // commonRoom.addTrainingTool(1, "SomeType");
+            // commonRoom.addTrainingTool(3, "SomeType");
+            // commonRoom.addTrainingTool(5, "SomeType");
+
+            // var list = commonRoom.getTrainingTools();
+            // for (int i = 0; i < list.Count; i++)
+            // {
+            //     Console.WriteLine();
+            //     Console.Write(list[i].getToolId());
+            //     Console.Write(" is broken = " + list[i].getToolStatus());
+                
+            // }
+               
+            // for (int i = 0; i < list.Count; i++)
+            // {
+            //     if(i == 1){
+            //         list[i].setTrainingToolStatus(true);
+            //     }
+            // }
+
+            // Console.WriteLine();
+            // Console.WriteLine("Some tools should now be broken!");
+
+            // for (int i = 0; i < list.Count; i++)
+            // {
+            //      Console.WriteLine();
+            //     Console.Write(list[i].getToolId());
+            //     Console.Write(" is broken = " + list[i].getToolStatus());
+            // }
+       
+            // Console.WriteLine();
+            // commonRoom.removeTrainingTool(1);
+            // for (int i = 0; i < list.Count; i++)
+            // {
+            //     Console.WriteLine();
+            //     Console.Write(list[i].getToolId());
+            //     Console.Write(" is broken = " + list[i].getToolStatus());
+            // }
+
+            // Console.ReadKey();            
         }
     }
 }

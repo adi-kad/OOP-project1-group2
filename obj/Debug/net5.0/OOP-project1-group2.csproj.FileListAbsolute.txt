@@ -1,0 +1,16 @@
+C:\Users\Admin\Desktop\school\OOP-project1-group2\obj\Debug\net5.0\OOP-project1-group2.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\school\OOP-project1-group2\obj\Debug\net5.0\OOP-project1-group2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\school\OOP-project1-group2\obj\Debug\net5.0\OOP-project1-group2.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\school\OOP-project1-group2\obj\Debug\net5.0\OOP-project1-group2.AssemblyInfo.cs
+C:\Users\Admin\Desktop\school\OOP-project1-group2\obj\Debug\net5.0\OOP-project1-group2.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\school\OOP-project1-group2\bin\Debug\net5.0\OOP-project1-group2.exe
+C:\Users\Admin\Desktop\school\OOP-project1-group2\bin\Debug\net5.0\OOP-project1-group2.deps.json
+C:\Users\Admin\Desktop\school\OOP-project1-group2\bin\Debug\net5.0\OOP-project1-group2.runtimeconfig.json
+C:\Users\Admin\Desktop\school\OOP-project1-group2\bin\Debug\net5.0\OOP-project1-group2.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\school\OOP-project1-group2\bin\Debug\net5.0\OOP-project1-group2.dll
+C:\Users\Admin\Desktop\school\OOP-project1-group2\bin\Debug\net5.0\ref\OOP-project1-group2.dll
+C:\Users\Admin\Desktop\school\OOP-project1-group2\bin\Debug\net5.0\OOP-project1-group2.pdb
+C:\Users\Admin\Desktop\school\OOP-project1-group2\obj\Debug\net5.0\OOP-project1-group2.dll
+C:\Users\Admin\Desktop\school\OOP-project1-group2\obj\Debug\net5.0\ref\OOP-project1-group2.dll
+C:\Users\Admin\Desktop\school\OOP-project1-group2\obj\Debug\net5.0\OOP-project1-group2.pdb
+C:\Users\Admin\Desktop\school\OOP-project1-group2\obj\Debug\net5.0\OOP-project1-group2.genruntimeconfig.cache

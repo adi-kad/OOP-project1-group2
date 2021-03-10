@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace OOP_project1_group2
 {
@@ -10,5 +11,21 @@ namespace OOP_project1_group2
 		{
 			this.broken = false;
 		}
+
+		public int getToolId()
+		{
+			return this.id;
+		}
+
+		public bool getToolStatus()
+		{
+			return this.broken;
+		}		
+
+		public void setTrainingToolStatus(bool isBroken)
+		{
+			this.broken = isBroken;
+		}
+		
 	}
 }

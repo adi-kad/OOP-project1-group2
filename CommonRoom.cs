@@ -18,19 +18,30 @@ namespace OOP_project1_group2
         }
 
         public void removeTrainingTool(int toolId)
-        {
-             _trainingTools.Remove(tool => tool.id == toolId).FirstOrDefault();
+        {            
+            for (int i = 0; i < _trainingTools.Count; i++)
+            {   
+                if (_trainingTools[i].getToolId() == toolId)
+                {
+                    _trainingTools.RemoveAt(i);
+                }
+            }           
         }
-
-        public List<int> getTrainingTools()
+        
+        public List<TrainingTool> getTrainingTools()
         {
             return _trainingTools;
         }
 
         public void setTrainingToolStatus(int toolId, bool isBroken)
         {
-           TrainingTool tool = _trainingTools.Where(tool => tool.id == toolId).FirstOrDefault();
-           tool.status = isBroken;
+            for (int i = 0; i < _trainingTools.Count; i++)
+            {   
+              if (_trainingTools[i].getToolId() == toolId)
+                {
+                    _trainingTools[i].setTrainingToolStatus(isBroken);
+                } 
+            }           
         }
 
     }
