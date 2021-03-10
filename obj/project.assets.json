@@ -8,19 +8,23 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Rippan\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Skola\\OOP-project1-group2\\OOP-project1-group2.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\school\\OOP-project1-group2\\OOP-project1-group2.csproj",
       "projectName": "OOP-project1-group2",
-      "projectPath": "C:\\Skola\\OOP-project1-group2\\OOP-project1-group2.csproj",
-      "packagesPath": "C:\\Users\\Rippan\\.nuget\\packages\\",
-      "outputPath": "C:\\Skola\\OOP-project1-group2\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\school\\OOP-project1-group2\\OOP-project1-group2.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\school\\OOP-project1-group2\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Rippan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
