@@ -1,0 +1,16 @@
+C:\Users\Dator 1\source\VisualCodeRepos\OOP-project1-group2\bin\Debug\net5.0\OOP-project1-group2.exe
+C:\Users\Dator 1\source\VisualCodeRepos\OOP-project1-group2\bin\Debug\net5.0\OOP-project1-group2.deps.json
+C:\Users\Dator 1\source\VisualCodeRepos\OOP-project1-group2\bin\Debug\net5.0\OOP-project1-group2.runtimeconfig.json
+C:\Users\Dator 1\source\VisualCodeRepos\OOP-project1-group2\bin\Debug\net5.0\OOP-project1-group2.runtimeconfig.dev.json
+C:\Users\Dator 1\source\VisualCodeRepos\OOP-project1-group2\bin\Debug\net5.0\OOP-project1-group2.dll
+C:\Users\Dator 1\source\VisualCodeRepos\OOP-project1-group2\bin\Debug\net5.0\ref\OOP-project1-group2.dll
+C:\Users\Dator 1\source\VisualCodeRepos\OOP-project1-group2\bin\Debug\net5.0\OOP-project1-group2.pdb
+C:\Users\Dator 1\source\VisualCodeRepos\OOP-project1-group2\obj\Debug\net5.0\OOP-project1-group2.csprojAssemblyReference.cache
+C:\Users\Dator 1\source\VisualCodeRepos\OOP-project1-group2\obj\Debug\net5.0\OOP-project1-group2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dator 1\source\VisualCodeRepos\OOP-project1-group2\obj\Debug\net5.0\OOP-project1-group2.AssemblyInfoInputs.cache
+C:\Users\Dator 1\source\VisualCodeRepos\OOP-project1-group2\obj\Debug\net5.0\OOP-project1-group2.AssemblyInfo.cs
+C:\Users\Dator 1\source\VisualCodeRepos\OOP-project1-group2\obj\Debug\net5.0\OOP-project1-group2.csproj.CoreCompileInputs.cache
+C:\Users\Dator 1\source\VisualCodeRepos\OOP-project1-group2\obj\Debug\net5.0\OOP-project1-group2.dll
+C:\Users\Dator 1\source\VisualCodeRepos\OOP-project1-group2\obj\Debug\net5.0\ref\OOP-project1-group2.dll
+C:\Users\Dator 1\source\VisualCodeRepos\OOP-project1-group2\obj\Debug\net5.0\OOP-project1-group2.pdb
+C:\Users\Dator 1\source\VisualCodeRepos\OOP-project1-group2\obj\Debug\net5.0\OOP-project1-group2.genruntimeconfig.cache
