@@ -5,7 +5,7 @@ namespace OOP_project1_group2
 {
     abstract class Bookable
     {
-        private int id;
+        protected int id;
         private Dictionary<string,bool> hours;
         private string type;
 
