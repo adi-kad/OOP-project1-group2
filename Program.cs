@@ -28,10 +28,12 @@ namespace OOP_project1_group2
             //     Console.WriteLine(d.Key + " " + d.Value);
             // }
 
-            Visitor v1 = new Visitor("Olof", "070000000");
-            Console.WriteLine(v1.getContactInfo());
-            Console.WriteLine(v1.getActiveBookings());
-            Console.WriteLine(v1.hasTrainingSchedule());
+            // Visitor v1 = new Visitor("Olof", "070000000");
+            // Console.WriteLine(v1.getContactInfo());
+            // Console.WriteLine(v1.getActiveBookings());
+            // Console.WriteLine(v1.hasTrainingSchedule());
+            
+            Console.ReadKey();            
         }
     }
 }
