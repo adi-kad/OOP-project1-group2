@@ -5,10 +5,10 @@ namespace OOP_project1_group2
 {
     abstract class Bookable
     {
-        private int id;
+        protected int id;
         private Dictionary<string, bool> hours;
         private string type;
-		private List<Booking> activeBookings;
+        private List<Booking> activeBookings;
 
         //Bookable times
         public Bookable(int id, string type) 
@@ -25,25 +25,24 @@ namespace OOP_project1_group2
  
             this.id = id;
             this.type = type;
-			activeBookings = new List<Booking>();
+            activeBookings = new List<Booking>();
         }
-		
-		public bool isAvailableAt(DateTime time)
-		{
-			/*
-			NYI: Compare to the object's daily schedule
-			*/
-			foreach(var booking in activeBookings)
-			{
-				//Check whether the given time is already occupied
-				//by an active booking
-				if(booking.isInBookingInterval(time))
-				{
-					return false;
-				}
-			}
-			//No scheduling conflicts found
-			return true;
-		}
+        public bool isAvailableAt(DateTime time)
+        {
+			    /*
+			    NYI: Compare to the object's daily schedule
+			    */
+			    foreach(var booking in activeBookings)
+			    {
+				  //Check whether the given time is already occupied
+				  //by an active booking
+				    if(booking.isInBookingInterval(time))
+				    {
+					    return false;
+				    }
+          }
+			  //No scheduling conflicts found
+			  return true;
+        }
     }
 }
