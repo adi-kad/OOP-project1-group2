@@ -28,9 +28,9 @@ namespace OOP_project1_group2
         }
         public void PrintSchedule()
         {
-            foreach (var d in schedule)
+            foreach (var n in schedule)
             {
-                Console.WriteLine(d.Key + " " + d.Value);
+                Console.WriteLine(n.Key + " " + n.Value);
             }
         }
     }
