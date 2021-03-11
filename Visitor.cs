@@ -6,24 +6,24 @@ namespace OOP_project1_group2
     class Visitor : Person
     {
         private List<Booking> activeBookings; // TBA
-        private bool hasTrainingSchedule;
+        private bool hasSchedule;
 
         public Visitor(string name, string contactNumber) : base(name, contactNumber)
         {
-            hasTrainingSchedule = false;
+            hasSchedule = false;
             activeBookings = new List<Booking>();
         }
         public string getContactInfo()
         {
             return name + " " + contactNumber;
         }
-        public List<int> getActiveBookings()
+        public List<Booking> getActiveBookings()
         {
             return activeBookings;
         }
         public bool hasTrainingSchedule()
         {
-            return hasTrainingSchedule;
+            return hasSchedule;
         }
         public bool createBooking(Bookable item, DateTime start, DateTime end)
         {
