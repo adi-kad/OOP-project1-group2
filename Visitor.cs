@@ -13,32 +13,48 @@ namespace OOP_project1_group2
             hasSchedule = false;
             activeBookings = new List<Booking>();
         }
-        public string getContactInfo()
-        {
-            return name + " " + contactNumber;
-        }
-        public List<Booking> getActiveBookings()
-        {
-            return activeBookings;
-        }
-        public bool hasTrainingSchedule()
-        {
-            return hasSchedule;
-        }
+        
         public bool createBooking(Bookable item, DateTime start, DateTime end)
         {
             bool success = false;
-            if(item.isAvailableInTimeInterval(start, end))
+            Booking booking = item.book(start, end);
+            if(booking != null)
             {
-                activeBookings.Add(new Booking(item, start, end));
+                activeBookings.Add(booking);
                 success = true;
             }
             return success;
         }
+        
+        public bool joinGroupActivity(GroupActivity activity)
+        {
+            return activity.addParticipant(this);
+        }
+        
+        public bool leaveGroupActivity(GroupActivity activity)
+        {
+            return activity.removeParticipant(this);
+        }
+        
+        public string getContactInfo()
+        {
+            return name + " " + contactNumber;
+        }
+        
+        public List<Booking> getActiveBookings()
+        {
+            return activeBookings;
+        }
+        
+        public bool hasTrainingSchedule()
+        {
+            return hasSchedule;
+        }
+        
         public bool cancelBooking(Booking booking)
         {
-            //List.Remove() returns a bool to indicate whether the removal succeeded.
-            return activeBookings.Remove(booking);
+            //return bool to indicate whether the removal succeeded.
+            return activeBookings.Remove(booking) && booking.getItem().removeBooking();
         }
     }
 }
