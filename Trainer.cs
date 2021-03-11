@@ -6,9 +6,9 @@ namespace OOP_project1_group2
     class Trainer : Employee
     {
         private Dictionary<string, bool> schedule;
-        public Trainer(Role role, int id, string name, string contactNumber) : base(id, name, contactNumber)
+        public Trainer(int id, string name, string contactNumber) : base(id, name, contactNumber)
         {
-            this.role = role;
+            role = Role.Trainer;
             this.schedule = new Dictionary<string, bool>();
             schedule.Add("11:00-12:00", true);
             schedule.Add("12:00-13:00", true);
