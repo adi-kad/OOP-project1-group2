@@ -15,11 +15,13 @@ namespace OOP_project1_group2
         
         public bool addParticipant(Visitor visitor)
         {
-            bool success = (participants.length < bookedItem.getMaxCapacity());
+            bool success = (participants.Count < bookedItem.getMaxCapacity());
             if(success)
             {
                 participants.Add(visitor);
+            
             }
+            return success;
         }
         
         public void cancelActivity()

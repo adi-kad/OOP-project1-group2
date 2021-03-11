@@ -11,6 +11,7 @@ namespace OOP_project1_group2
         protected List<Booking> activeBookings;
         protected int maxCapacity;
 
+
         //Bookable times
         public Bookable(int id, string type) 
         {
@@ -27,7 +28,6 @@ namespace OOP_project1_group2
             this.id = id;
             this.type = type;
             activeBookings = new List<Booking>();
-            this.current = 0;
         }
         
         public Booking book(DateTime start, DateTime end)

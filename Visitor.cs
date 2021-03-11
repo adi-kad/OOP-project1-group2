@@ -54,7 +54,7 @@ namespace OOP_project1_group2
         public bool cancelBooking(Booking booking)
         {
             //return bool to indicate whether the removal succeeded.
-            return activeBookings.Remove(booking) && booking.getItem().removeBooking();
+            return activeBookings.Remove(booking) && booking.getItem().removeBooking(booking);
         }
     }
 }
