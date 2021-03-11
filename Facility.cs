@@ -47,5 +47,24 @@ namespace OOP_project1_group2
         {
             return bookable;
         }
+        public bool addNewEmployee(Role role, int id, string name, string contactNumber)
+        {
+            if(role == Role.Administrator)
+            {
+                employees.Add(new Administrator(id, name, contactNumber));
+                return true;
+            }
+            else if(role == Role.Receptionist)
+            {
+                employees.Add(new Receptionist(id, name, contactNumber));
+                return true;
+            }
+            else if(role == Role.Trainer)
+            {
+                employees.Add(new Trainer(id, name, contactNumber));
+                return true;
+            }
+            return false;
+        }    
     }
 }

@@ -28,6 +28,14 @@ namespace OOP_project1_group2
             {
                 Console.WriteLine(dict.Key + " " + dict.Value);
             }
+
+            f1.addNewEmployee(Role.Administrator,1,"Jesper","070000000");
+            f1.addNewEmployee(Role.Administrator,2,"Olof","070000000");
+            f1.addNewEmployee(Role.Receptionist,3,"Adnan","070000000");
+            f1.addNewEmployee(Role.Receptionist,4,"Martin","070000000");
+            f1.addNewEmployee(Role.Trainer,5,"Albin","070000000");
+
+            
         }
     }
 }
