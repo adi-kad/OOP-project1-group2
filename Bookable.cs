@@ -6,9 +6,9 @@ namespace OOP_project1_group2
     abstract class Bookable
     {
         protected int id;
-        private Dictionary<string, bool> hours;
-        private string type;
-        private List<Booking> activeBookings;
+        protected Dictionary<string, bool> hours;
+        protected string type;
+        protected List<Booking> activeBookings;
 
         //Bookable times
         public Bookable(int id, string type) 

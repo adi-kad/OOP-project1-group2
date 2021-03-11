@@ -17,6 +17,10 @@ namespace OOP_project1_group2
             this.employees = employees;
             this.visitors = visitors;
         }
+        public Facility(int id)
+        {
+            this.id = id;
+        }
         public void AddBookableRoom(int id, string type)
         {
             

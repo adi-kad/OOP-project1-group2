@@ -14,9 +14,9 @@ namespace OOP_project1_group2
         {
             // TBA
         }
-        public void addActivity()
+        public void addActivity(int id, string type)
         {
-            // TBA Add new bookable object(ex massage)
+            // Add new activity as bookable room to Facility
         }
     }
 }
