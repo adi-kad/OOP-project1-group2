@@ -87,7 +87,8 @@ m1=  1..*</panel_attributes><additional_attributes>10;10;10;60</additional_attri
 --
 +addBookableRoom(): void
 +removeBookableRoom(roomID): void
-+getBookableRooms(): list
++GetBookableRooms(): list
++GetBookableHours(): list
 
 
 
@@ -102,8 +103,9 @@ m1=0..*
 </panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>UMLClass</id><coordinates><x>830</x><y>530</y><w>180</w><h>120</h></coordinates><panel_attributes>BookableRoom
 --
 
-
-
+--
++ToString(): string
++getSchedule(): Dictionary&lt;string,bool&gt;
 
 
 
@@ -114,8 +116,10 @@ m1=0..*
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1050</x><y>530</y><w>170</w><h>120</h></coordinates><panel_attributes>TrainingTool
 --
 -broken: bool
-
-
+--
++getToolId(): int
++getToolStatus()
++setTrainingToolStatus(): void
 
 
 
@@ -142,10 +146,10 @@ m1=0..*
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1130</x><y>230</y><w>60</w><h>40</h></coordinates><panel_attributes>lt=.
 m1=1</panel_attributes><additional_attributes>10;10;40;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>930</x><y>349</y><w>210</w><h>120</h></coordinates><panel_attributes>Bookable
 --
--id: int
--hours: Dictionary&lt;string,bool&gt;
--type: string
-
+#d: int
+#hours: Dictionary&lt;string,bool&gt;
+#type: string
+#activeBookings: List&lt;Booking&gt;
 
 
 
