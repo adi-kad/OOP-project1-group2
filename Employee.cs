@@ -18,9 +18,21 @@ namespace OOP_project1_group2
         {
             this.id = id;
         }
-        public string getEmployeeInfo()
+        public string getAllEmployeeInfo()
         {
-            return id + " " + name + " " + contactNumber;
+            return ($"{role} {id} {name} {contactNumber}\n");
+        }
+        public string getEmployeeName()
+        {
+            return name;
+        }
+        public int getEmployeeId()
+        {
+            return id;
+        }
+        public string GetEmployeeContactNumber()
+        {
+            return contactNumber;
         }
     }
 }

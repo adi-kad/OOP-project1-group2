@@ -87,6 +87,47 @@ namespace OOP_project1_group2
                 return true;
             }
             return false;
-        }    
+        }
+        public bool removeEmployee(Role role, int id, string name)
+        {
+            if(role == Role.Administrator)
+            {
+                for (int i = 0; i < employees.Count; i++)
+                {
+                    if(id == employees[i].getEmployeeId() && name == employees[i].getEmployeeName())
+                    {
+                        employees.RemoveAt(i);
+                        return true;
+                    }
+                }
+            }
+            else if(role == Role.Receptionist)
+            {
+                for (int i = 0; i < employees.Count; i++)
+                {
+                    if(id == employees[i].getEmployeeId() && name == employees[i].getEmployeeName())
+                    {
+                        employees.RemoveAt(i);
+                        return true;
+                    }
+                } 
+            }
+            else if(role == Role.Trainer)
+            {
+                for (int i = 0; i < employees.Count; i++)
+                {
+                    if(id == employees[i].getEmployeeId() && name == employees[i].getEmployeeName())
+                    {
+                        employees.RemoveAt(i);
+                        return true;
+                    }
+                } 
+            }
+            return false;
+        }
+        public List<Employee> GetEmployees()
+        {
+            return employees;
+        }
     }
 }
