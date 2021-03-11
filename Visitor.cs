@@ -5,13 +5,13 @@ namespace OOP_project1_group2
 {
     class Visitor : Person
     {
-        private List<int> activeBookings; // TBA
-        private bool trainingSchedule;
+        private List<Booking> activeBookings; // TBA
+        private bool hasTrainingSchedule;
 
         public Visitor(string name, string contactNumber) : base(name, contactNumber)
         {
-            trainingSchedule = false;
-            activeBookings = new List<int>();
+            hasTrainingSchedule = false;
+            activeBookings = new List<Booking>();
         }
         public string getContactInfo()
         {
@@ -23,15 +23,22 @@ namespace OOP_project1_group2
         }
         public bool hasTrainingSchedule()
         {
-            return trainingSchedule;
+            return hasTrainingSchedule;
         }
-        public void createBooking(/*facility, bookable object, key */) // bool
+        public bool createBooking(Bookable item, DateTime start, DateTime end)
         {
-            // TBA return bool value after booking is added to activeBookings for object
+            bool success = false;
+            if(item.isAvailableInTimeInterval(start, end))
+            {
+                activeBookings.Add(new Booking(item, start, end));
+                success = true;
+            }
+            return success;
         }
-        public void cancelBooking(/*facility, bookable object, key */) // bool
+        public bool cancelBooking(Booking booking)
         {
-            // TBA return bool value after cancellation of booking is completed
+            //List.Remove() returns a bool to indicate whether the removal succeeded.
+            return activeBookings.Remove(booking);
         }
     }
 }
