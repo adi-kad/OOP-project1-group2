@@ -48,5 +48,21 @@ namespace OOP_project1_group2
             //No scheduling conflicts found
             return true;
         }
+        public bool isAvailableInTimeInterval(DateTime startTime, DateTime endTime)
+        {
+            foreach(var booking in activeBookings)
+            {
+                //Check if the time interval overlaps an existing booking period (assumed to be ordered and contiguous).
+                if(booking.getStartTime() > startTime && booking.getStartTime() < endTime)
+                {
+                    return false;
+                }
+                else if(booking.getEndTime() > startTime && booking.getEndTime() < endTime)
+                {
+                    return false;
+                }
+            }
+            return true; //No overlaps were found.
+        }
     }
 }
