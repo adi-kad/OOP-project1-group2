@@ -9,11 +9,11 @@ namespace OOP_project1_group2
         {
             Facility f1 = new Facility(1);
             var rooms = f1.GetBookableRooms();
-            f1.AddBookableRoom(1,"Spinning");
-            f1.AddBookableRoom(2,"Gruppaktiviter");
-            f1.AddBookableRoom(3,"Gruppaktiviter");
-            f1.AddBookableRoom(4,"Gruppaktiviter");
-            f1.AddBookableRoom(5,"Gruppaktiviter");
+            f1.AddBookableRoom(Role.Administrator, 1, "Spinning");
+            f1.AddBookableRoom(Role.Administrator, 2, "Gruppaktiviter");
+            f1.AddBookableRoom(Role.Administrator, 3, "Gruppaktiviter");
+            f1.AddBookableRoom(Role.Administrator, 4, "Gruppaktiviter");
+            f1.AddBookableRoom(Role.Administrator, 5, "Gruppaktiviter");
 
             // Get hours for all rooms
             foreach (var d in f1.GetBookableRooms())
@@ -28,6 +28,14 @@ namespace OOP_project1_group2
             {
                 Console.WriteLine(dict.Key + " " + dict.Value);
             }
+
+            f1.addNewEmployee(Role.Administrator,1,"Jesper","070000000");
+            f1.addNewEmployee(Role.Administrator,2,"Olof","070000000");
+            f1.addNewEmployee(Role.Receptionist,3,"Adnan","070000000");
+            f1.addNewEmployee(Role.Receptionist,4,"Martin","070000000");
+            f1.addNewEmployee(Role.Trainer,5,"Albin","070000000");
+
+            
         }
     }
 }

@@ -21,23 +21,29 @@ namespace OOP_project1_group2
         {
             this.id = id;
         }
-        public void AddBookableRoom(int id, string type)
+        public void AddBookableRoom(Role role, int id, string type)
         {
-            
-            bookable.Add(new BookableRoom(id, type));
-            
+            if(role == Role.Administrator)
+            {
+                bookable.Add(new BookableRoom(id, type));
+            }
+            else
+            {
+                Console.WriteLine("Du saknar behörighet att skapa ett nytt rum");
+            }
         }
-        public void RemoveBookableRoom(int roomID)
+        public void RemoveBookableRoom(Role role,int roomID)
         {
-            
-            bookable.RemoveAt(roomID);
-            
+            if(role == Role.Administrator)
+            {
+                bookable.RemoveAt(roomID);
+            }
+            else
+            {
+                Console.WriteLine("Du saknar behörighet att ta bort rum");
+            }
         }
-        public List<Bookable> GetBookableRooms()
-        {
-            return bookable;
-        }
-
+      
         public List<Dictionary<string, bool>> GetBookableHours()
         {        
             List<Dictionary<string, bool>> freeHours = new List<Dictionary<string, bool>>();               
@@ -57,6 +63,30 @@ namespace OOP_project1_group2
             
             return freeHours;       
         }
-     
+      
+        public List<Bookable> GetBookableRooms()
+        {
+            return bookable;
+        }
+
+        public bool addNewEmployee(Role role, int id, string name, string contactNumber)
+        {
+            if(role == Role.Administrator)
+            {
+                employees.Add(new Administrator(id, name, contactNumber));
+                return true;
+            }
+            else if(role == Role.Receptionist)
+            {
+                employees.Add(new Receptionist(id, name, contactNumber));
+                return true;
+            }
+            else if(role == Role.Trainer)
+            {
+                employees.Add(new Trainer(id, name, contactNumber));
+                return true;
+            }
+            return false;
+        }    
     }
 }

@@ -10,6 +10,7 @@ namespace OOP_project1_group2
 		public TrainingTool(int id, string type) : base(id, type)
 		{
 			this.broken = false;
+			this.maximum = 1;
 		}
 
 		public int getToolId()
