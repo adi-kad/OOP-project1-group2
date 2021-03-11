@@ -4,14 +4,19 @@ namespace OOP_project1_group2
 {
     class Booking
     {
-        private Bookable bookedItem;
-        private DateTime start, end;
+        protected Bookable bookedItem;
+        protected DateTime start, end;
         
         public Booking(Bookable item, DateTime start, DateTime end)
         {
             this.bookedItem = item;
             this.start = start;
             this.end = end;
+        }
+        
+        public Bookable getItem()
+        {
+            return bookedItem;
         }
         
         public DateTime getStartTime()
