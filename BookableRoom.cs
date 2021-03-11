@@ -8,7 +8,7 @@ namespace OOP_project1_group2
         //Bookable times
         public BookableRoom(int id, string type) : base(id, type)
         {
-			
+			this.maximum = 20;
         }
         public override string ToString()
         {

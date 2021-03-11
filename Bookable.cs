@@ -9,6 +9,9 @@ namespace OOP_project1_group2
         protected Dictionary<string, bool> hours;
         protected string type;
         protected List<Booking> activeBookings;
+        //Use current and maximum to see if room or tool is at max capacity.
+        protected int maximum;
+        protected int current;
 
         //Bookable times
         public Bookable(int id, string type) 
@@ -26,6 +29,7 @@ namespace OOP_project1_group2
             this.id = id;
             this.type = type;
             activeBookings = new List<Booking>();
+            this.current = 0;
         }
         public bool isAvailableAt(DateTime time)
         {
