@@ -54,5 +54,9 @@ namespace OOP_project1_group2
         {
             return participants.Remove(visitor);
         }
+        public List<Visitor> getParticipants()
+        {
+            return participants;
+        }
     }
 }

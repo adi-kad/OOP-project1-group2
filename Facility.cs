@@ -77,7 +77,7 @@ namespace OOP_project1_group2
             return bookable;
         }
 
-        public bool addNewEmployee(Role role, int id, string name, string contactNumber)
+        public bool AddNewEmployee(Role role, int id, string name, string contactNumber)
         {
             if(role == Role.Administrator)
             {
@@ -96,7 +96,7 @@ namespace OOP_project1_group2
             }
             return false;
         }
-        public bool removeEmployee(Role role, int id, string name)
+        public bool RemoveEmployee(Role role, int id, string name)
         {
             if(role == Role.Administrator)
             {
@@ -132,6 +132,10 @@ namespace OOP_project1_group2
                 } 
             }
             return false;
+        }
+        public void AddNewEmployee(Employee employee)
+        {
+            employees.Add(employee);  
         }
         public List<Employee> GetEmployees()
         {

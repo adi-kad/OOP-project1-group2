@@ -38,17 +38,23 @@ namespace OOP_project1_group2
         
         public bool joinGroupActivity(GroupActivity activity)
         {
+            activeBookings.Add(activity);
             return activity.addParticipant(this);
         }
         
         public bool leaveGroupActivity(GroupActivity activity)
         {
+            activeBookings.Remove(activity);
             return activity.removeParticipant(this);
         }
         
         public string getContactInfo()
         {
             return name + " " + contactNumber;
+        }
+        public string getName()
+        {
+            return name;
         }
         
         public List<Booking> getActiveBookings()

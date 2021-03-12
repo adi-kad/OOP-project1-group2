@@ -7,56 +7,58 @@ namespace OOP_project1_group2
     {
         static void Main(string[] args)
         {
-            // Generate facility
+            // Generate a facility class that we can use as a base for the system
             Facility f1 = new Facility(1);
             var rooms = f1.GetBookableRooms();
 
-            // Add rooms to facility
-            f1.AddBookableRoom(Role.Administrator, 1, "Spinning");
-            f1.AddBookableRoom(Role.Administrator, 2, "Gruppaktiviter");
-            f1.AddBookableRoom(Role.Administrator, 3, "Gruppaktiviter");
-            f1.AddBookableRoom(Role.Administrator, 4, "Gruppaktiviter");
-            f1.AddBookableRoom(Role.Administrator, 5, "Gruppaktiviter");
+            // Create a administrator for the facility
+            Administrator admin = new Administrator(1,"Olof","07000000");
+            f1.AddNewEmployee(admin);
 
-            // Get hours for all rooms
-            foreach (var d in f1.GetBookableRooms())
-            {
-                foreach (var dict in ((BookableRoom)d).getSchedule())
-                {
-                    Console.WriteLine("Rum:" + d + " " + dict.Key + " " + dict.Value);
-                }
-            }
-            // Get hours for specific room
-            foreach(var dict in ((BookableRoom)rooms[0]).getSchedule() )
+            // Create a room in the facility that can be booked for activities
+            f1.AddBookableRoom(Role.Administrator,1,"Spinning");
+            BookableRoom room1 = (BookableRoom)rooms[0];
+
+            // Create a new bookable group activity by an administrator
+            GroupActivity spinning = admin.addActivity(room1,DateTime.Parse("13:00"), DateTime.Parse("14:00"),null,"Spinning");
+
+            // Returns all time slots for the room we just created. 
+            // Also contains bool values if the room's time slots are bookable or not (true or false)
+            foreach(var dict in (room1).getSchedule())
             {
                 Console.WriteLine(dict.Key + " " + dict.Value);
             }
 
-            // Add new employees to facility 1 (f1)
-            f1.addNewEmployee(Role.Administrator,1,"Jesper","070000000");
-            f1.addNewEmployee(Role.Administrator,2,"Olof","070000000");
-            f1.addNewEmployee(Role.Receptionist,3,"Adnan","070000000");
-            f1.addNewEmployee(Role.Receptionist,4,"Martin","070000000");
-            f1.addNewEmployee(Role.Trainer,5,"Albin","070000000");
+            // Creates a few test visitors
+            Visitor v1 = new Visitor("Jesper", "0702392868");
+            Visitor v2 = new Visitor("Adnan", "0703212321");
 
-            // Get all employees
-            Console.WriteLine("==================");
-            foreach (var d in f1.GetEmployees())
+            // Add v1 & v2 to the group activity
+            v1.joinGroupActivity(spinning);
+            v2.joinGroupActivity(spinning);
+
+            // Check all participants for the spinning activity
+            foreach (var participants in spinning.getParticipants())
             {
-                foreach (var element in d.getAllEmployeeInfo())
-                {
-                    Console.Write(element);
-                }
+                Console.WriteLine(participants.getContactInfo());
             }
-            // Remove an employee
-            Console.WriteLine(f1.removeEmployee(Role.Administrator,2,"Olof")); // returns true or false
-            Console.WriteLine("==================");
-            foreach (var d in f1.GetEmployees())
+
+            // Get all active bookings for v1 (visitor 1)
+            foreach (var booking in v1.getActiveBookings())
             {
-                foreach (var element in d.getAllEmployeeInfo())
-                {
-                    Console.Write(element);
-                }
+                Console.WriteLine(v1.getName());
+                Console.Write(booking.getItem() + " ");
+                Console.Write(booking.getStartTime() + " - ");
+                Console.Write(booking.getEndTime());
+            }
+            Console.WriteLine();
+            // Get all active bookings for v2 (visitor 2)
+            foreach (var booking in v2.getActiveBookings())
+            {
+                Console.WriteLine(v2.getName());
+                Console.Write(booking.getItem() + " ");
+                Console.Write(booking.getStartTime() + " - ");
+                Console.Write(booking.getEndTime());
             }
         }
     }

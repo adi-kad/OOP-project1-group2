@@ -14,7 +14,7 @@
 
 
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>223</x><y>240</y><w>220</w><h>140</h></coordinates><panel_attributes>Employee
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>223</x><y>240</y><w>220</w><h>150</h></coordinates><panel_attributes>Employee
 --
 -id: int
 -role: Role
@@ -32,12 +32,13 @@
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>323</x><y>190</y><w>340</w><h>70</h></coordinates><panel_attributes>lt=-
 m1=  1..*</panel_attributes><additional_attributes>10;50;10;10;320;10</additional_attributes></element><element><id>Relation</id><coordinates><x>473</x><y>140</y><w>40</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
 m2=  2
-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>533</x><y>240</y><w>210</w><h>140</h></coordinates><panel_attributes>Visitor
+</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>533</x><y>240</y><w>210</w><h>150</h></coordinates><panel_attributes>Visitor
 --
 -activeBookings: List&lt;Booking&gt;
 -hasSchedule: bool
 -
 +getContactInfo(): string
++getName(): string
 +getActiveBookings(): List&lt;Booking&gt;
 +hasTrainingSchedule(): bool
 +createBooking(): bool
@@ -56,7 +57,7 @@ m2=  1..*</panel_attributes><additional_attributes>10;10;10;50</additional_attri
 
 
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>370</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>440</y><w>500</w><h>80</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>380</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>440</y><w>500</w><h>80</h></coordinates><panel_attributes>lt=-
 m1=  1..*</panel_attributes><additional_attributes>10;60;10;10;480;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>230</x><y>500</y><w>210</w><h>170</h></coordinates><panel_attributes>Administrator
 --
 -id: int
@@ -217,4 +218,5 @@ m1=0..*
 --
 +addParticipant(): bool
 +cancelActivity(): void
-+removeParticipant(): bool</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1210</x><y>60</y><w>60</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;40;10</additional_attributes></element></diagram>
++removeParticipant(): bool
++getParticipants(): List&lt;Visitor&gt; participants</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1210</x><y>60</y><w>60</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;40;10</additional_attributes></element></diagram>
