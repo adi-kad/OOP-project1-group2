@@ -34,7 +34,7 @@ namespace OOP_project1_group2
                 description + ") has been cancelled. Please review your schedule.");
                 visitor.leaveGroupActivity(this);
             }
-            this.room.removeBooking(this);
+            this.bookedItem.removeBooking(this);
         }
         
         public string getDescription()
