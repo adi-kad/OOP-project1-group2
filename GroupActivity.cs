@@ -13,6 +13,7 @@ namespace OOP_project1_group2
         {
             this.coach = coach;
             this.description = description;
+			this.participants = new List<Visitor>();
         }
         
         public bool addParticipant(Visitor visitor)
@@ -33,7 +34,7 @@ namespace OOP_project1_group2
             }
         }
         
-        public void getDescription()
+        public string getDescription()
         {
             return description;
         }

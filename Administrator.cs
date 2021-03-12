@@ -17,7 +17,7 @@ namespace OOP_project1_group2
         public bool addActivity(BookableRoom room, DateTime start, DateTime end, Trainer coach, string description)
         {
             //book() attempts to create a booking; returns the booking on success, null on failure.
-            return (room.book(room, start, end, coach, description) != null);
+            return (room.book(start, end, coach, description) != null);
         }
     }
 }
