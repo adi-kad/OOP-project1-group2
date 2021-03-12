@@ -6,11 +6,13 @@ namespace OOP_project1_group2
     class GroupActivity : Booking
     {
         private Trainer coach;
+        private string description;
         private List<Visitor> participants;
         
-        public GroupActivity(BookableRoom room, DateTime start, DateTime end, Trainer coach) : base(room, start, end)
+        public GroupActivity(BookableRoom room, DateTime start, DateTime end, Trainer coach, string description) : base(room, start, end)
         {
             this.coach = coach;
+            this.description = description;
         }
         
         public bool addParticipant(Visitor visitor)
@@ -19,7 +21,6 @@ namespace OOP_project1_group2
             if(success)
             {
                 participants.Add(visitor);
-            
             }
             return success;
         }
@@ -30,6 +31,11 @@ namespace OOP_project1_group2
             {
                 //Send texts to notify all participants of the cancellation.
             }
+        }
+        
+        public void getDescription()
+        {
+            return description;
         }
         
         public bool removeParticipant(Visitor visitor)
