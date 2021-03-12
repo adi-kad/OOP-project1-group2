@@ -5,6 +5,15 @@ namespace OOP_project1_group2
 {
     abstract class Bookable
     {
+        /* 
+        Abstract class. Base class for BookableRoom & TrainingTool
+        id = id number of object
+        type = what is the room used for
+        MaxCapacity = How many users can book the room or training tool before its non bookable (false state)
+        Contains a dictionary of every time slot a booking room or training tool will have. 
+        Contains a List of all current bookings so we can return it as we check for available time slots on specific rooms or training tools
+        */
+
         protected int id;
         protected Dictionary<string, bool> hours;
         protected string type;

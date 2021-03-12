@@ -5,6 +5,12 @@ namespace OOP_project1_group2
 {
     class BookableRoom : Bookable
     {
+        /* 
+        Inherits from the Bookable class
+        Every BookableRoom object is considered a Room for the facility. 
+        Will contain information about max users that can book the specific room
+        */
+
         public BookableRoom(int id, string type) : base(id, type)
         {
             this.maxCapacity = 20;

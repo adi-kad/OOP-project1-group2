@@ -5,6 +5,14 @@ namespace OOP_project1_group2
 {
     class Facility 
     {
+         /* 
+        location = physical gym location
+        Facility class is the class that represent a gym location.
+        Every locations needs a facility class as its the base everything else is built on
+        Contains lists of every bookable object, employees and visitors
+        Has methods that allows the administrator to add new employees to the location based on roles.
+        */
+
         private int id;
         private List<Bookable> bookable = new List<Bookable>();    
         private List<Employee> employees = new List<Employee>();

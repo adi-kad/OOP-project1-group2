@@ -5,6 +5,14 @@ namespace OOP_project1_group2
 {
     class GroupActivity : Booking
     {
+        /* 
+        Inherits from the booking class
+        Represent a bookable group activity that takes place in a bookableRoom
+        Every object will contain a training coach (or null) and a list of all participants linked to that acitivy
+        Has methods to add new visitors the activity.
+        If a group activity gets cancelled, a message will be sent to all participants involved in that object
+        */
+    
         private Trainer coach;
         private string description;
         private List<Visitor> participants;
