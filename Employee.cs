@@ -3,6 +3,12 @@ using System.Collections.Generic;
 
 namespace OOP_project1_group2
 {
+    /* 
+    Inherits name & contactnumber from the Person class
+    Creates a enum containing all roles for the system
+    Contains methods to return different types of employee information, like name, contact number and id
+    */
+    
     enum Role
     {
         Receptionist,
