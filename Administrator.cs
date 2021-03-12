@@ -14,9 +14,18 @@ namespace OOP_project1_group2
         {
             // TBA
         }
-        public void addActivity(int id, string type)
+        public bool addActivity(int id, string type, DateTime start, DateTime end, BookableRoom room, Trainer coach)
         {
-            // Add new activity as bookable room to Facility
+            try
+            {
+                new GroupActivity(room, start, end, coach);
+                return true;
+            }
+            catch (System.Exception)
+            {
+                return false;
+                throw;
+            }
         }
     }
 }
