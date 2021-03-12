@@ -5,6 +5,11 @@ namespace OOP_project1_group2
 {
     abstract class Person
     {
+        /* 
+        Base class for any subclass that will handle humans in the system
+        Contains the name and cellphone number of every object.
+        */
+
         protected string name, contactNumber;
 
         public Person(string name, string contactNumber)
