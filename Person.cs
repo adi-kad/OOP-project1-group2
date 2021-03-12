@@ -12,5 +12,11 @@ namespace OOP_project1_group2
             this.name = name;
             this.contactNumber = contactNumber;
         }
+        
+        //Send a message *to* this Person
+        public void sendMessage(string text)
+        {
+            //NYI
+        }
     }
 }

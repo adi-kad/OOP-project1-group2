@@ -13,7 +13,7 @@ namespace OOP_project1_group2
         {
             this.coach = coach;
             this.description = description;
-			this.participants = new List<Visitor>();
+            this.participants = new List<Visitor>();
         }
         
         public bool addParticipant(Visitor visitor)
@@ -30,8 +30,11 @@ namespace OOP_project1_group2
         {
             foreach(var visitor in participants)
             {
-                //Send texts to notify all participants of the cancellation.
+                visitor.sendMessage("One of your planned group activities (" + 
+                description + ") has been cancelled. Please review your schedule.");
+                visitor.leaveGroupActivity(this);
             }
+            this.room.removeBooking(this);
         }
         
         public string getDescription()
