@@ -3,6 +3,14 @@ using System.Collections.Generic;
 
 namespace OOP_project1_group2
 {
+    /* 
+    Inherits from Employee
+    All Trainer objects will have the role of Trainer
+    All Trainer objects will have a dictionary of available time slots that can be booked
+    Contains methods to mark any specific time slot as booked or not (true or false)
+    Contains a method to return all time slots for the object
+    
+    */
     class Trainer : Employee
     {
         private Dictionary<string, bool> schedule;
